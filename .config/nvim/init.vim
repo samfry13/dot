@@ -1,0 +1,48 @@
+" Indent Options
+set autoindent
+set expandtab
+set shiftwidth=4
+set smarttab
+set tabstop=4
+
+" Search Options
+set hlsearch
+set ignorecase
+set incsearch
+set smartcase
+
+" Performance Options
+set lazyredraw
+
+" Text Rendering
+set display+=lastline
+set encoding=utf-8
+set linebreak
+set scrolloff=1
+set sidescrolloff=5
+syntax enable
+set wrap
+
+" Interface Options
+set laststatus=2
+set ruler
+set number
+set wildmenu
+set tabpagemax=50
+set noerrorbells
+set mouse=a
+set title
+colo desert
+
+" Code Folding Options
+set foldmethod=indent
+set foldnestmax=3
+
+" Misc Options
+set autoread
+set backspace=indent,eol,start
+set confirm
+set history=10000
+
+" Shortcuts
+
