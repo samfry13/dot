@@ -1,0 +1,12 @@
+./update
+
+sudo apt-get install neovim
+sudo apt-get install vifm
+sudo apt-get install git
+
+ln -s ~/Repo/dot/.config/ ~/.config
+ln -s ~/Repo/dot/.tmux.conf ~/.tmux.conf
+ln -s ~/Repo/dot/.bashrc ~/.bashrc
+ln -s ~/Repo/dot/.profile ~/.profile
+ln -s ~/Repo/dot/.bin/ ~/.bin
+ln -s ~/Repo/dot/.gitconfig ~/.gitconfig

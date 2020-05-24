@@ -46,8 +46,11 @@ d/home/sam/Repo/dot
 	.bin
 1
 d/home/sam/Repo/dot/.bin
-	update
-2
+	..
+0
+d/home/sam/Repo/dot
+	.bin
+1
 d
 
 # Right window history (oldest to newest):
@@ -60,6 +63,8 @@ D
 :colorscheme desert
 :colo darkdesert
 :colo
+:! touch install
+:! chmod +x install
 :q
 
 # Search history (oldest to newest):
