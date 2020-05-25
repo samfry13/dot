@@ -3,7 +3,8 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # Install Necessary Packages
-sudo apt-get install git make
+sudo apt-get install git make curl wget
+sudo apt-get install build-essential libssl-dev
 
 # Install Config Files
 mkdir -p ~/Repo
@@ -25,6 +26,7 @@ ln -s ~/Repo/dot/.bin/ ~/.bin
 ln -s ~/Repo/dot/.gitconfig ~/.gitconfig
 
 # Install Custom Packages
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 sudo apt-get install neovim
 sudo apt-get install vifm
 
