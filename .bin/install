@@ -4,6 +4,13 @@ sudo apt-get install neovim
 sudo apt-get install vifm
 sudo apt-get install git
 
+rm -r ~/.config
+rm ~/.tmux.conf
+rm ~/.bashrc
+rm ~/.profile
+rm ~/.bash_profile
+rm ~/.gitconfig
+
 ln -s ~/Repo/dot/.config/ ~/.config
 ln -s ~/Repo/dot/.tmux.conf ~/.tmux.conf
 ln -s ~/Repo/dot/.bashrc ~/.bashrc

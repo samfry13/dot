@@ -1,0 +1,2 @@
+gruvbox_dark.theme
+solarized_dark.theme

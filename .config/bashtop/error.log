@@ -1,0 +1,34 @@
+ 
+New instance of bashtop version: 0.9.1 Pid: 496093
+ 
+New instance of bashtop version: 0.9.1 Pid: 506987
+ 
+New instance of bashtop version: 0.9.1 Pid: 509207
+ 
+New instance of bashtop version: 0.9.1 Pid: 509633
+ 
+New instance of bashtop version: 0.9.1 Pid: 509865
+ 
+New instance of bashtop version: 0.9.1 Pid: 510177
+ 
+New instance of bashtop version: 0.9.1 Pid: 510724
+23:49:53 ERROR: On line 4321 
+23:49:53 ERROR: On line 4321 
+stty: 'standard input': Input/output error
+23:49:53 ERROR: On line 4324 
+/usr/local/bin/bashtop: line 3582: echo: write error: Input/output error
+23:49:53 ERROR: On line 3582 
+23:49:53 ERROR: On line 4658 
+stty: 'standard input': Input/output error
+stty: 'standard input': Input/output error
+23:49:53 ERROR: On line 598 
+23:49:53 ERROR: On line 598 
+/usr/local/bin/bashtop: line 599: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+/usr/local/bin/bashtop: line 1071: echo: write error: Input/output error
+23:49:53 ERROR: On line 1071 
+23:49:53 ERROR: On line 603 
+/usr/local/bin/bashtop: line 1909: echo: write error: Input/output error
+23:49:53 ERROR: On line 1909 
+23:49:53 ERROR: On line 604 
+ 
+New instance of bashtop version: 0.9.1 Pid: 511641

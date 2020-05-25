@@ -35,7 +35,7 @@ set title
 colo desert
 
 " Code Folding Options
-set foldmethod=indent
+set foldmethod=manual
 set foldnestmax=3
 
 " Misc Options
@@ -43,6 +43,7 @@ set autoread
 set backspace=indent,eol,start
 set confirm
 set history=10000
+set mouse=a
 
 " Shortcuts
 
