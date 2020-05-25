@@ -2,6 +2,11 @@
 PS1="\[\e[1;34m\]\u@\H\[\e[0m\]:\[\e[32m\]\w\[\e[91m\]\$(__git_ps1)\[\e[0m\] > "
 export PROMPT_DIRTRIM=2
 
+# PATH
+export PATH=$PATH:~/.bin
+
+[[ $TERM != "screen" ]] && exec tmux
+
 # aliases
 alias refreshenv="source ~/.bashrc"
 alias vim="nvim"
@@ -13,5 +18,3 @@ if grep -q Microsoft /proc/version; then
     alias start="cmd.exe /C"
 fi
 
-# PATH
-export PATH=$PATH:~/.bin
