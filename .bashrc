@@ -5,8 +5,6 @@ export PROMPT_DIRTRIM=2
 # PATH
 export PATH=$PATH:~/.bin
 
-[[ $TERM != "screen" ]] && exec tmux
-
 # aliases
 alias refreshenv="source ~/.bashrc"
 alias vim="nvim"
