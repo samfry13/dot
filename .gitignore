@@ -1,4 +1,5 @@
 .config/vifm/vifminfo
 .config/nvim/.netrwhist
+.config/nvim/plugged
 .config/bashtop/error.log
 .config/configstore/
