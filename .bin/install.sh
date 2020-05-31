@@ -31,6 +31,12 @@ sudo apt-get install neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo apt-get install vifm
 
+# Install npm packages globally
+sudo npm install -g npm
+sudo npm install -g prettier
+sudo npm install -g eslint
+
+
 # Install Custom apps
 cd ~/Repo
 git clone https://github.com/aristocratos/bashtop.git

@@ -45,5 +45,7 @@ set confirm
 set history=10000
 set mouse=a
 
-" Shortcuts
-
+" Plugins
+call plug#begin()
+Plug 'dense-analysis/ale'
+call plug#end()
