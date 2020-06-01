@@ -24,18 +24,18 @@ ln -s ~/Repo/dot/.bashrc ~/.bashrc
 ln -s ~/Repo/dot/.profile ~/.profile
 ln -s ~/Repo/dot/.bin/ ~/.bin
 ln -s ~/Repo/dot/.gitconfig ~/.gitconfig
+source ~/.bashrc
 
 # Install Custom Packages
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+nvm install node
 sudo apt-get install -y neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 sudo apt-get install -y vifm
 
 # Install npm packages globally
 sudo npm install -g npm
-sudo npm install -g prettier
-sudo npm install -g eslint
-
 
 # Install Custom apps
 cd ~/Repo
