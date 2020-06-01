@@ -2,7 +2,7 @@
 GOPATH=$HOME/go
 
 function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -alternate-ssh-icon -max-width 50 -colorize-hostname -cwd-max-depth 3 -shell bash)"
+    PS1="$($GOPATH/bin/powerline-go -alternate-ssh-icon -max-width 50 -hostname-only-if-ssh -colorize-hostname -cwd-max-depth 3 -shell bash)"
 }
 
 if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then

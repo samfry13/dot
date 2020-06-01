@@ -30,9 +30,12 @@ set number
 set wildmenu
 set tabpagemax=50
 set noerrorbells
-set mouse=a
 set title
-colo desert
+if has("termguicolors")     " set true colors
+    set t_8f=\[[38;2;%lu;%lu;%lum
+    set t_8b=\[[48;2;%lu;%lu;%lum
+    set termguicolors
+endif
 
 " Code Folding Options
 set foldmethod=manual
@@ -48,7 +51,19 @@ set mouse=a
 " Plugins
 call plug#begin()
 Plug 'dense-analysis/ale'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
 call plug#end()
+
+" Gruvbox Options
+autocmd vimenter * colorscheme gruvbox
+autocmd vimenter * :AirlineTheme gruvbox
+autocmd vimenter * hi! Normal guibg=NONE ctermbg=NONE
+
+" Airline Options
+let g:airline_powerline_fonts = 1
+let g:airline_theme='gruvbox'
 
 " ALE options
 let g:ale_sign_error = '●'
