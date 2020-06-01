@@ -1,10 +1,10 @@
 # Update Packages
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 # Install Necessary Packages
-sudo apt-get install git make curl wget
-sudo apt-get install build-essential libssl-dev
+sudo apt-get install -y git make curl wget
+sudo apt-get install -y build-essential libssl-dev
 
 # Install Config Files
 mkdir -p ~/Repo
