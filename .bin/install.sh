@@ -27,9 +27,9 @@ ln -s ~/Repo/dot/.gitconfig ~/.gitconfig
 
 # Install Custom Packages
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo apt-get install neovim
+sudo apt-get install -y neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-sudo apt-get install vifm
+sudo apt-get install -y vifm
 
 # Install npm packages globally
 sudo npm install -g npm
