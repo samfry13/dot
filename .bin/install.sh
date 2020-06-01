@@ -5,6 +5,8 @@ sudo apt-get upgrade -y
 # Install Necessary Packages
 sudo apt-get install -y git make curl wget
 sudo apt-get install -y build-essential libssl-dev
+sudo apt-get install -y golang-go
+go get -u github.com/justjanne/powerline-go
 
 # Install Config Files
 mkdir -p ~/Repo

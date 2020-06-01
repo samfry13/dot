@@ -1,5 +1,13 @@
-# prompt
-PS1="\[\e[1;34m\]\u@\H\[\e[0m\]:\[\e[32m\]\w\[\e[91m\]\$(__git_ps1)\[\e[0m\] > "
+# Powerline Prompt
+GOPATH=$HOME/go
+
+function _update_ps1() {
+    PS1="$($GOPATH/bin/powerline-go -alternate-ssh-icon -max-width 50 -colorize-hostname -cwd-max-depth 3 -shell bash)"
+}
+
+if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 export PROMPT_DIRTRIM=2
 
 # PATH
@@ -18,7 +26,7 @@ if grep -q Microsoft /proc/version; then
     alias start="cmd.exe /C"
 fi
 
-
+# NVM tools
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
