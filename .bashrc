@@ -1,14 +1,5 @@
-# Powerline Prompt
-GOPATH=$HOME/go
-
-function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -alternate-ssh-icon -max-width 50 -hostname-only-if-ssh -colorize-hostname -cwd-max-depth 3 -shell bash)"
-}
-
-if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
-export PROMPT_DIRTRIM=2
+# Promptline
+source ~/.config/promptline/.promptline.sh
 
 # PATH
 # dynamically update path on directory change

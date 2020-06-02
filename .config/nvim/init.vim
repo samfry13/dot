@@ -1,3 +1,36 @@
+" Plugins
+call plug#begin()
+Plug 'dense-analysis/ale'
+Plug 'edkolev/promptline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'morhetz/gruvbox'
+"Plug 'lifepillar/vim-solarized8'
+Plug 'edkolev/tmuxline.vim'
+call plug#end()
+
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
+" Gruvbox options
+colorscheme gruvbox
+autocmd vimenter * hi! Normal guibg=NONE ctermbg=NONE
+
+" Airline options
+let g:airline_theme = 'gruvbox'
+let g:airline_powerline_fonts = 1
+
+" Promptline options
+let g:promptline_theme = 'airline'
+
+" ALE options
+let g:ale_sign_error = '●'
+let g:ale_sign_warning = '.'
+let g:ale_fixers = {'javascript': ['eslint']}
+let g:ale_fix_on_save = 1
+
 " Indent Options
 set autoindent
 set expandtab
@@ -47,27 +80,3 @@ set backspace=indent,eol,start
 set confirm
 set history=10000
 set mouse=a
-
-" Plugins
-call plug#begin()
-Plug 'dense-analysis/ale'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
-Plug 'edkolev/tmuxline.vim'
-call plug#end()
-
-" Gruvbox Options
-autocmd vimenter * colorscheme gruvbox
-autocmd vimenter * :AirlineTheme gruvbox
-autocmd vimenter * hi! Normal guibg=NONE ctermbg=NONE
-
-" Airline Options
-let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
-
-" ALE options
-let g:ale_sign_error = '●'
-let g:ale_sign_warning = '.'
-let g:ale_fixers = {'javascript': ['eslint']}
-let g:ale_fix_on_save = 1

@@ -1,0 +1,1 @@
+/home/sam/.config/nvim/plugged/gruvbox/colors/gruvbox.vim
