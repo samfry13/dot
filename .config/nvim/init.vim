@@ -1,18 +1,17 @@
 " Plugins
 call plug#begin()
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 Plug 'edkolev/promptline.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
-"Plug 'lifepillar/vim-solarized8'
 Plug 'edkolev/tmuxline.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
+"autocmd VimEnter *
+"  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+"  \|   PlugInstall --sync | q
+"  \| endif
 
 " Gruvbox options
 colorscheme gruvbox
@@ -29,7 +28,6 @@ let g:promptline_theme = 'airline'
 let g:ale_sign_error = '●'
 let g:ale_sign_warning = '.'
 let g:ale_fixers = {'javascript': ['eslint']}
-let g:ale_fix_on_save = 1
 
 " Indent Options
 set autoindent

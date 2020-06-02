@@ -3,3 +3,4 @@
 .config/nvim/plugged
 .config/bashtop/error.log
 .config/configstore/
+.config/coc/
