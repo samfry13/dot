@@ -38,9 +38,9 @@ sudo apt-get install -y vifm
 sudo npm install -g npm
 
 # Install Custom apps
-cd ~/Repo
-git clone https://github.com/aristocratos/bashtop.git
-cd bashtop
-sudo make install
+cd ~/
+sudo add-apt-repository ppa:bashtop-monitor/bashtop
+sudo apt update
+sudo apt install bashtop
 
 echo "All Done!"
